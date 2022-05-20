@@ -11,6 +11,6 @@ class Review extends Model
     protected $fillable = ['product_id', 'customer', 'comment', 'review'];
 
     function product(){
-        $this->belongsTo(Product::class);
+       return $this->belongsTo(Product::class);
     }
 }

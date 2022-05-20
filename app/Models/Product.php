@@ -11,6 +11,6 @@ class Product extends Model
 
     protected $fillable = ['name', 'details', 'stock', 'discount', 'price'];
     function reviews(){
-        $this->hasMany(Review::class);
+        return $this->hasMany(Review::class);
     }
 }
